@@ -19,14 +19,14 @@ export default function SideBar(){
  const [chats, loading, error] = useCollection(
      session && 
      query(
-    collection(db,"users", session.user?.email!,"chats"),orderBy('createdAt', 'desc')
+    collection(db,"users", session.user?.email!, "chats"),orderBy('createdAt', 'desc')
     )
    );
   const {data: open} = useSWR('open', {
     fallbackData:false,
   })
     //console.log(chats)
-    console.log(open);
+    //console.log(open);
  return (
     <div className={`${open === true ? 'inline ' : 'hidden'} md:inline`}>
 

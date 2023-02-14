@@ -29,6 +29,7 @@ function ChatRow({id}: Props) {
         useEffect(() => {
             if(!pathname) return;
           setActive(pathname.includes(id));
+            //eslint-disable-next-line
         }, [pathname])
 
   return <Link href={`/chat/${id}`} className={`chatRow ${active && 'bg-gray-700/50'} `}>

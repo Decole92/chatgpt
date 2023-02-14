@@ -7,6 +7,7 @@ import ClientProvider from '@/components/ClientProvider'
 import Menu from '../components/Menu'
 import './globals.css'
 
+
 export default async function RootLayout({
   children,
 }: {
@@ -19,7 +20,7 @@ export default async function RootLayout({
      <head />
       <body>
         <SessionProvider session={session}>
-          
+         
         {!session ? (
           <Login />
         ) : (
@@ -36,6 +37,7 @@ export default async function RootLayout({
       </div>
         </div>
         )}
+      
         </SessionProvider>
         </body>
     </html>
