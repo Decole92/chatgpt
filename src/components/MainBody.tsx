@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function MainBody() {
-  return (
-    <div className='bg-[#343541] flex-1'></div>
-  )
+  return <div className="bg-[#343541] flex-1"></div>;
 }
 
-export default MainBody
+export default MainBody;
